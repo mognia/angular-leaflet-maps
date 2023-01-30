@@ -1,0 +1,88 @@
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  margin: 0 35%;
+  /*align-items: center;*/
+}
+.form-box {
+  border: 1px solid blue;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+}
+.field-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 3rem 0;
+}
+.field-box input {
+  max-width: 13.8rem
+}
+.map-container {
+  width: 50%;
+  height: 12rem;
+}
+.w-100 {
+  width: 100%;
+}
+.w-50{
+  width: 50%;
+}
+.select-box select {
+  background-color: #0563af;
+  color: white;
+  padding: 4px;
+  border: none;
+  font-size: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+}
+
+.select-box::before {
+  content: "\f13a";
+  font-family: FontAwesome;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  font-size: 28px;
+  line-height: 45px;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+}
+
+.select-box:hover::before {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.select-box select option {
+  padding: 30px;
+}
+#fileInput{
+  display: none;
+}
+#icon{
+  width: 45px;
+  cursor: pointer;
+}
+.btn-box {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+.btn-box .submit {
+
+  background: #5a5af8;
+  color: white;
+  border-radius: 7px;
+  padding: 6px 14px;
+  border: none;
+
+}
